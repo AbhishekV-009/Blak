@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 100px;
+    opacity: 0.8;
+}
+.logo,.navlist > a{
+    color: white;
+    opacity: 1;
+}
+.logo{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+}
+.navbar{
+    margin-top: 5px;
+}
+.navlist{
+    display: inline-block;
+    padding: 15px;
+}
+.navlist > a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 1;
+}
+.navlist:hover > a{
+    color:#fccb06;
+    font-weight: 500;
+}
+.navlist .home{
+    color: #fccb06;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* --------------------------------------------Section A--------------------------------------------------------- */
+.acontainer{
+    padding: 180px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/service/header-inner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ap1{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.ap2{
+    font-size: 20px;
+}
+.ap1,.ap2{
+    color: white;
+}
+
+
+/* --------------------------------------------SECTION---------------------------------------------------------
+----------------------------------------------B------------------------------------------------- */
+
+.bcontainer{
+    padding: 130px 60px;
+}
+.bimg{
+    width: 255px;
+    height: 328px;
+    position: relative;
+}
+.bcard{
+    width: 255px;
+    position: relative;
+}
+.bcimg{
+    width: 100%;
+    height: 100%;
+}
+.log1,.log2,.log3{
+    position: absolute;
+}
+.log1{
+    bottom: 80px;
+    right: -20px;
+}
+.log2{
+    left: 0;
+    bottom: 30px;
+}
+.log3{
+    bottom: -40px;
+    right: 50px;
+}
+.bcontain{
+    box-shadow: 20px 20px 20px rgb(0 0 0 / 3%);;
+    padding: 50px 60px;
+}
+.bp1{
+    font-size: 20px;
+}
+.bp2{
+    color: #727272;
+}
+.byellow{
+    background-color: #fccb06;
+    padding: 40px;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    bottom: 0;
+    opacity: 0;
+}
+.bcard:hover .byellow{
+    opacity: 1;
+    transform: translateY(-130px);
+}
+.byp1{
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: white;
+}
+.byp2 i{
+    color: white;
+    margin-right: 20px;
+}
+.bcardcontainer{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------SECTION---------------------------------------------------------
+----------------------------------------------L------------------------------------------------- */
+
+.lcontainer{
+    padding: 40px ;
+}
+/* --------------------------------------------FOOTER--------------------------------------------------------- */
+
+.footcontainer{
+    background-color:black;
+    color: #727272;
+    padding: 150px 100px;
+}
+.footcard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divfoot1,.divfoot2,.divfoot3,.divfoot4{
+    width: 243px;
+    height: 290px;
+}
+.df1h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+.df2h1,.df3h1,.df4h1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.divfoot2 p a,.divfoot3 p a{
+    text-decoration: none;
+    color: #727272;
+}
+.divfoot1 p,.divfoot2 p,.divfoot3 p,.divfoot4 p{
+    margin-bottom: 20px;
+}
+.divfoot2 p:hover a,.divfoot3 p:hover a{
+    color: white;
+}
+.divfoot4 p span{
+    color: white;
+}
+.fd4p6 i:hover{
+    color: #fccb06;
+}
+.fd4p6 i{
+    transition: all 0.5s;
+    color: white;
+    margin-right: 30px;
+}
+.footp1{
+    padding: 30px;
+    text-align: center;
+    background-color: #202020;
+    color:lightgray;
+}
+/* --------------------------------------------MEDIA QUERY--------------- */
+@media screen and (min-width:320px) and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .navcontainer{
+        display:block;
+    }
+    header{
+        position: static;
+    }      
+    .footcard{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bcardcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

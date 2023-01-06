@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 100px;
+    opacity: 0.8;
+}
+.logo,.navlist > a{
+    color: white;
+    opacity: 1;
+}
+.logo{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+}
+.navbar{
+    margin-top: 5px;
+}
+.navlist{
+    display: inline-block;
+    padding: 15px;
+}
+.navlist > a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 1;
+}
+.navlist:hover > a{
+    color:#fccb06;
+    font-weight: 500;
+}
+.navlist .home{
+    color: #fccb06;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* --------------------------------------------Section A--------------------------------------------------------- */
+.acontainer{
+    padding: 180px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/about/header-inner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ap1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.ap2{
+    font-size: 20px;
+}
+.ap1,.ap2{
+    color: white;
+}
+
+
+/* --------------------------------------------Section B--------------------------------------------------------- */
+
+
+.bcontain{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 525px;
+    padding: 230px 0 0 60px;
+    position: absolute ;
+    top: 0;
+    transition: all 0.5s;
+}
+.bcard{
+    position: relative;
+}
+.bcard:hover .bcontain{
+    background-color: rgba(252, 203, 6,0.9);
+}
+.bcard:hover .bp2 a{
+    color: white;
+}
+.bp1{
+    font-size: 41px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.bp2 a{
+    text-decoration: none;
+    color: #fccb06;
+}
+.brcontain{
+    width: 350px;
+    height: 525px;
+    padding: 90px 60px;
+    text-align: center;
+}
+.brp1{
+    font-size: 42px;
+    font-weight: 700;
+
+}
+.bcimg{
+    width:350px;
+    height:525px;
+}
+.bcontainer{
+    background-color: #f5f5f5;
+}
+.brp1::after{
+    content: "";
+    background-color: #fccb06;
+    width: 40px;
+    height: 2px;
+    display: block;
+    margin:20px 0 30px 90px;
+}
+.brp2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.brp3{
+    color: #727272;
+    margin-bottom: 40px;
+}
+.brp4 i{
+    color: white;
+}
+.brp4{
+    background-color: black;
+    padding:10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.brp4:hover{
+    opacity: 0.7;
+}
+.brp4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.brcard{
+    background-color: white;
+}
+.bcardcontainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 60px;
+}
+
+/* --------------------------------------------Section c--------------------------------------------------------- */
+
+.ccontainer{
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/about/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
+}
+
+.cp1{
+    font-size: 20px;
+    color: #fccb06;
+    margin-bottom: 30px;
+}
+.cp2{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.cp2::after{
+    content: "";
+    background-color: #fccb06;
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin:30px 0 40px 0px;
+    transform: translateX(550px);
+}
+.cp3{
+    color: #727272;
+    margin-bottom: 50px;
+
+}
+.cp4{
+    background-color: #fccb06;
+    padding:10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+}
+.cp4:hover{
+    background-color: black;
+}
+.cp4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* --------------------------------------------Section D--------------------------------------------------------- */
+
+
+.dcontainer{
+    background: url(../img/about/166.jpg) center no-repeat;
+    background-size: cover;
+    padding: 150px 60px;
+}
+.dcardcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.dcard{
+    width: 303px;
+}
+.dp1{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.dp1::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    background-color: #fccb06;
+    margin-right: 30px;
+}
+.dp2{
+    color: #727272;
+    margin-left: 50px;
+}
+.dlcard{
+    width: 449px;
+    height: 269px;
+}
+.dlp1{
+    font-size: 20px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+.dlp2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.dlp3{
+    color: #727272;
+    margin-bottom: 40px;
+}
+.dlp4{
+    background-color: black;
+    padding:10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.dlp2::after{
+    content: "";
+    background-color: #fccb06;
+    width: 100px;
+    height: 2px;
+    display: block;
+    margin: 20px 0 40px 0;
+}
+.dlp4:hover{
+    opacity: 0.8;
+}
+.dlp4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+/* --------------------------------------------FOOTER--------------------------------------------------------- */
+
+.footcontainer{
+    background-color:black;
+    color: #727272;
+    padding: 150px 100px;
+}
+.footcard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divfoot1,.divfoot2,.divfoot3,.divfoot4{
+    width: 243px;
+    height: 290px;
+}
+.df1h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+.df2h1,.df3h1,.df4h1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.divfoot2 p a,.divfoot3 p a{
+    text-decoration: none;
+    color: #727272;
+}
+.divfoot1 p,.divfoot2 p,.divfoot3 p,.divfoot4 p{
+    margin-bottom: 20px;
+}
+.divfoot2 p:hover a,.divfoot3 p:hover a{
+    color: white;
+}
+.divfoot4 p span{
+    color: white;
+}
+.fd4p6 i:hover{
+    color: #fccb06;
+}
+.fd4p6 i{
+    transition: all 0.5s;
+    color: white;
+    margin-right: 30px;
+}
+.footp1{
+    padding: 30px;
+    text-align: center;
+    background-color: #202020;
+    color:lightgray;
+}
+
+/* --------------------------------------------MEDIA QUERY--------------- */
+@media screen and (min-width:320px) and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .navcontainer{
+        display:block;
+    }
+    header{
+        position: static;
+    }      
+    .brp1::after{
+        margin: 10px 60px;
+    }
+    .brp4{
+        padding: 10px 15px;
+    }
+    .brp4 a{
+        font-size: 13px;
+
+    }
+    .brcontain{
+        width: 280px;
+    }
+    .bcardcontainer{
+        flex-direction: column;
+        align-items: center;
+        /* padding: 0px; */
+    }
+    .bcimg,.bcontain{
+        width: 280px;
+    }
+
+    .footcard{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cp2{
+        font-size: 25px;
+    }
+    .cp2::after{
+        transform: translateX(90px);
+    }
+    .dcardcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dlcard{
+        width: 280px;
+        margin-bottom: 150px ;
+    }
+    .dcard{
+        margin-bottom: 50px;
+    }
+}                           
