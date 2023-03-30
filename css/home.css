@@ -881,7 +881,7 @@ p i{
         box-sizing: border-box;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    .navcontainer{
+    .navcontainer,.navlist{
         display:block;
     }
     header{
