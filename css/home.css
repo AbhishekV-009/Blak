@@ -964,9 +964,9 @@ p i{
         align-items: center;
         transform: translate(0,30%);
     }
-    .d{
+/*     .d{
         height: 500vh;
-    }
+    } */
     .dcard{
         width: 280px;  
         margin-bottom: 30px;
